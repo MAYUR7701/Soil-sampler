@@ -1,0 +1,21 @@
+@media print {
+    /* Hide header and footer */
+    @page {
+        size: auto;  /* auto is the current printer page size */
+        margin: 0;  /* this affects the margin in the printer settings */
+    }
+
+    body {
+        margin: 0;
+    }
+
+    /* Hide header and footer elements */
+    header, footer, time, title {
+        display: none !important;
+    }
+
+    /* Optional: Hide page URL in modern browsers */
+    @bottom-left {
+        content: '' !important;
+    }
+}
